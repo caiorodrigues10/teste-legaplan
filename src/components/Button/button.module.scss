@@ -1,0 +1,27 @@
+.styleDefault {
+  width: 100%;
+  height: auto;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 16px;
+}
+
+.primary {
+  background: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+  color: #fff;
+}
+
+.secondary {
+  background: #e7eefb;
+  color: #000;
+}
+
+.danger {
+  background: linear-gradient(90deg, #d30707 0%, #f05353 68.65%);
+  color: #fff;
+}
