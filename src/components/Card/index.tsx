@@ -1,6 +1,15 @@
-import { CardRoot } from "./CardRoot";
+import styles from "./card.module.scss";
+import { CardRootProps } from "./types";
 
-export const Card = {
-  Root: CardRoot,
-  Header: CardRoot,
-};
+export function Card({
+  children,
+  className,
+  size = "md",
+  ...rest
+}: CardRootProps) {
+  return (
+    <div className={`${styles.card} ${styles[size]} ${className}`} {...rest}>
+      {children}
+    </div>
+  );
+}

@@ -1,10 +1,5 @@
 import styles from "@/components/Button/button.module.scss";
-import { ButtonHTMLAttributes, ReactNode } from "react";
-
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "danger";
-  children: ReactNode;
-}
+import { ButtonProps } from "./types";
 
 export function Button({
   variant = "primary",

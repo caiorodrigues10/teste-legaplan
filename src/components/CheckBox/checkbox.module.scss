@@ -1,0 +1,50 @@
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.customCheckbox {
+  display: none;
+}
+
+.checkboxLabel {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #b0bbd1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  position: relative;
+}
+
+.checkboxLabel::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("/check.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.customCheckbox:checked + .checkboxLabel {
+  background-color: #a0dcf6;
+  border-color: #0796d3;
+}
+
+.customCheckbox:checked + .checkboxLabel::after {
+  opacity: 1;
+}
+
+.checkboxText {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}

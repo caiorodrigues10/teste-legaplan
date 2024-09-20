@@ -4,14 +4,12 @@ import styles from "./navBar.module.scss";
 export function NavBar() {
   const date = new Date();
 
-  const options = {
+  const options: Intl.DateTimeFormatOptions = {
     weekday: "long",
     day: "2-digit",
     month: "long",
     year: "numeric",
-  } as any;
-
-  // Formata a data
+  };
   const formattedDate = date.toLocaleDateString("pt-BR", options);
 
   return (

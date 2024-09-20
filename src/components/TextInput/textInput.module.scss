@@ -1,0 +1,56 @@
+.textInputRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.textInputLabel {
+  width: 100%;
+  font-size: 16px;
+  gap: 8px;
+ display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: none;
+  font-size: 16px;
+  color: #1f2937;
+  outline: none;
+
+  &::placeholder {
+    color: #0000008f;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.textInputError {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #f00;
+  transition: color 0.3s;
+}
+
+.inputTheme {
+  width: 100%;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+  transition: border-color 0.3s;
+  border: 1px solid #d7dde9;
+  cursor: text;
+
+  &:focus-within {
+    border: 1px solid #0796D3;
+  }
+
+  // &:hover {
+  //   background-color: rgba(220, 220, 220, 0.75);
+  // }
+}

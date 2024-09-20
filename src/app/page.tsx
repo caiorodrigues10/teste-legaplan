@@ -1,12 +1,14 @@
-import { Button } from "@/components/Button";
-import { NavBar } from "@/components/NavBar";
 import styles from "@/app/page.module.scss";
+import { NavBar } from "@/components/NavBar";
+import { CardListItems } from "@/components/page/home/CardListItems";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <NavBar />
-      <Button>Adicionar nova tarefa</Button>
+      <section className={styles.content}>
+        <CardListItems />
+      </section>
     </div>
   );
 }

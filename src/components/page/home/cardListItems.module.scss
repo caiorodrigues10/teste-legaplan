@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  & > button {
+    width: 50%;
+  }
+}
+
+.buttonList {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px dashed #d7dde9;
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  background: transparent;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: #f7f9fd;
+    border: 1px solid #f7f9fd;
+  }
+}
+
+.titleCard {
+  color: #0000008a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.iconTrash {
+  padding: 8px;
+  border-radius: 100%;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.iconTrash:hover {
+  background: #ececec;
+}
+.textConfirm {
+  color: #0000008A;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    & > button {
+      width: 100%;
+    }
+  }
+}
